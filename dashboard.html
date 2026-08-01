@@ -557,12 +557,12 @@ document.getElementById("uploadForm").addEventListener("submit", async function(
     try {
 
         let response = await fetch(
-              "https://n8n-app.calmglacier-d84b33de.centralindia.azurecontainerapps.io/webhook/68a90837-cd3c-477e-9f81-9ee347737529",
-        {
+            "https://n8n-app.calmglacier-d84b33de.centralindia.azurecontainerapps.io/webhook/68a90837-cd3c-477e-9f81-9ee347737529",
+            {
                method: "POST",
                body: formData
-        }
-    );
+            }
+        );
 
         if (response.ok) {
             alert("✅ Notes uploaded and sent successfully!");
